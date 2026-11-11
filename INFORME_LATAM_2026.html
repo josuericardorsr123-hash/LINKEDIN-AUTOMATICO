@@ -1171,7 +1171,7 @@ body.motion-paused .bx-in,body.motion-paused .bx-in *{animation:none!important}
 </style>
 
 </head>
-<body data-theme="dark" class="is-booting intro-open">
+<body data-theme="light" class="is-booting intro-open">
 
 <a class="skip-link" href="#maincontent">Saltar al contenido</a>
 <div class="progress-indicator" id="progressBar"></div>
@@ -6803,12 +6803,12 @@ function toggleTheme(){
   $('#themeLabel').textContent = dark?'Oscuro':'Claro';
   applyLogos();
   renderTab(currentTab);
-  try{localStorage.setItem('litlatam-theme',document.body.dataset.theme);}catch(e){}
+  try{localStorage.setItem('litlatam-theme-v3',document.body.dataset.theme);}catch(e){}
 }
 
 /* ===================== BOOT ===================== */
 function boot(){
-  try{const t=localStorage.getItem('litlatam-theme');if(t)document.body.dataset.theme=t;}catch(e){}
+  try{const t=localStorage.getItem('litlatam-theme-v3');if(t)document.body.dataset.theme=t;}catch(e){}
   $('#themeLabel').textContent = document.body.dataset.theme==='dark'?'Claro':'Oscuro';
   chartTheme();
   renderNav();
