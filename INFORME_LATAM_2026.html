@@ -1059,8 +1059,8 @@ body.motion-paused .bx-in,body.motion-paused .bx-in *{animation:none!important}
 .ix-screen{position:fixed;inset:0;z-index:2000;display:flex;flex-direction:column;min-height:100dvh;color:#EAF2FF;background:#040B17;overflow-x:hidden;overflow-y:auto;font-family:var(--font-text);--cx:50vw;--cy:50vh}
 .ix-screen.is-hidden{display:none}
 .ix-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.ix-bg img{position:absolute;inset:-3%;width:106%;height:106%;object-fit:cover;opacity:0;transform:scale(1.14);filter:saturate(1.15) brightness(.62);transition:opacity 1.8s ease,transform 16s var(--ease-out)}
-.ix-screen.ix-play .ix-bg img.is-loaded{opacity:.62;transform:scale(1)}
+.ix-bg img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;opacity:0;transform:scale(1.14);filter:saturate(1.15) brightness(.62);transition:opacity 1.8s ease,transform 16s var(--ease-out)}
+.ix-screen.ix-play .ix-bg img.is-loaded{opacity:.62;transform:scale(1.04)}
 .ix-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(1100px 700px at 12% -5%,rgba(30,138,255,.34),transparent 60%),radial-gradient(900px 620px at 105% 105%,rgba(0,179,136,.26),transparent 60%),linear-gradient(90deg,rgba(4,11,23,.94) 0%,rgba(4,11,23,.80) 45%,rgba(4,11,23,.55) 100%),linear-gradient(0deg,rgba(4,11,23,.95),transparent 40%)}
 .ix-canvas{position:absolute;inset:0;z-index:1;width:100%;height:100%;pointer-events:none;opacity:.9}
 .ix-grid{position:absolute;inset:0;z-index:1;pointer-events:none;background-image:linear-gradient(rgba(120,170,230,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(120,170,230,.055) 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 40% 45%,#000 10%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 40% 45%,#000 10%,transparent 75%)}
